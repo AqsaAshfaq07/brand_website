@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="products/website_logo.webp">
+    <link rel="stylesheet" href="LUXE.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <title>LUXE</title>
+</head>
+<body>
+    <header>
+      <!-- Add logo and navigation links here -->
+      <div class="container">
+      <h1 ><a id="title" class="nav-link" href="LUXE.html">LUXE</a></h1>
+      </div>
+      
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <ul>
+          <li class="nav-item"><a class="nav-link" href="products.html">PRODUCTS</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">ABOUT</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT</a></li>
+          <li class="nav-item"><a class="nav-link" href="cart.html" id="cart">CART</a></li>
+        </ul>
+      </nav>
+    </header>
+    <marquee behavior="scroll" direction="left" scrollamount="10s" >FREE DELIVERY FOR ORDERS GREATER THAN 2000/- PKR</marquee>
+
+    <br><br><br>
+
+<!-- ABOUT -->
+<div class="about-container">
+  <img id="about-img" src="products/top2_img.png" alt="" width="100%" height="450px">
+</div>
+<div class="about-desc">
+  <h2><u>OUR LIFE STORY</u></h2>
+  <p id="about-story">Our brand, "LUXE" was founded in 2005 by a group of friends with a passion for fashion and a desire to create high-quality, stylish clothing at affordable prices.
+
+    Starting out as a small boutique in a local mall, we quickly gained a following for our unique designs and attention to detail. As our customer base grew, so did our business, and we expanded to multiple locations throughout the city.
+    
+    In 2010, we took the next step and launched our online store, allowing customers from all over the world to shop with us. This move proved to be a success and our online sales quickly surpassed those of our brick-and-mortar stores.
+    
+    Over the years, we've stayed true to our roots by continuing to offer unique, fashionable clothing at accessible prices. We've also expanded our product line to include a wide range of clothing and accessories for men, women, and children.
+  </p>
+  <p>In 2020, we introduced sustainable and eco-friendly options to our collection to align with our mission of promoting sustainable fashion.
+    
+    Today, our brand is a household name and we're proud to have a loyal customer base that spans the globe. We're excited to continue growing and evolving, always striving to bring our customers the latest fashion trends and the highest-quality clothing.
+    
+    Thank you for choosing Fashion Avenue, we look forward to being a part of your fashion journey</p>
+  <h2> <u>OUR MOTIVE</u></h2>
+    <p id="about-moto">
+    Designs are all about celebrating individuality, encouraging confidence and embracing diversity.    
+
+    Fashion can be a powerful force for good, and using it makes a positive impact on the world. Our clothing will not only make you look good, but also make you feel good about the choices you make.
+    
+    When women feel empowered, they can accomplish anything. Join us on this mission to empower women, one outfit at a time.</p>
+</div>
+
+<div class="about-picture">
+    <img id="img-1" src="products/meetup.webp" alt="Managers GTG">
+    <img id="img-2" src="products/meetup1.webp" alt="Managers GTG" >
+    <img id="img-3" src="products/meetup2.webp" alt="Managers GTG">
+</div>
+
+
+
+<!-- NEWSLETTER -->
+<div class="newsletter">
+              
+  <h1 class="monthly-news"> MONTHLY NEWSLETTER</h1><br>
+  <p>Sign Up to receive updates from our shop about upcoming events.</p>
+
+  <div id="subscribeForm">
+    <form>
+        <label for="email">Enter</label>
+        <input type="email" id="email" name="email">
+        <button type="submit" id="subscribeBtn">SUBSCRIBE</button>
+    </form>
+</div>
+
+</div>
+<script>
+  // Get the form element
+  var form = document.getElementById("subscribeForm");
+
+  form.addEventListener("submit", function(event) {
+
+    // Get the email value
+    var email = document.getElementById("email").value;
+
+    var message = document.createElement("div");
+    message.innerHTML = "Thank you for subscribing!";
+    message.style.position = "fixed";
+    message.style.top = "50%";
+    message.style.left = "50%";
+    message.style.transform = "translate(-50%, -50%)";
+    message.style.backgroundColor = "lightgreen";
+    message.style.padding = "10px";
+    message.style.zIndex = "9999";
+
+    // Add the message to the page
+    document.body.appendChild(message);
+  });
+</script>
+<!-- FOOTER -->
+
+<footer>
+    <br><br><br>
+    <div class="footer-container">
+      
+      <div class="footer-left">
+        <h3 class="footer-heading">LUXE</h3>
+      </div>
+  
+      <div class="footer-right">
+        <h3 class="footer-heading">MENU</h3>
+        <ul class="menu-links">
+          <li><a class="footer-link" href="LUXE.html">Home</a></li><br>
+          <li><a class="footer-link" href="products.html">Products</a></li><br>
+          <li><a class="footer-link" href="about.html">About</a></li><br>
+          <li><a class="footer-link" href="contact.html">Contact</a></li><br>
+          <li><a class="footer-link" href="#">Style Guide</a></li>
+        </ul>
+      </div>
+  
+      <div class="footer-left">
+        <h3 class="footer-heading">SIZE CHART</h3>
+        <ul>
+          <li><a class="footer-link" href="/ladies-shoes-size-chart">Ladies Shoes Size Chart</a></li><br>
+          <li><a class="footer-link" href="/ladies-apparel-size-chart">Ladies Apparel Size Chart</a></li><br>
+          <li><a class="footer-link" href="/denim-size-chart">Denim Size Chart</a></li><br>
+          <li><a class="footer-link" href="/kids-shoes-size-chart">Kids Shoes Size Chart</a></li><br>
+          <li><a class="footer-link" href="/kids-pret-size-chart">Kids Pret Size Chart</a></li><br>
+        </ul>
+      </div>
+        
+        <div class="footer-right">
+          <h3 class="footer-heading">HELP</h3>
+          <ul>
+            <li><a class="footer-link" href="/shipping-policy">Shipping Policy</a></li><br>
+            <li><a class="footer-link" href="/returns-exchange-policy">Returns & Exchange Policy</a></li><br>
+            <li><a class="footer-link" href="/privacy-policy">Privacy Policy</a></li><br>
+            <li><a class="footer-link" href="/faqs">FAQs</a></li><br>
+            <li><a class="footer-link" href="/store-locations">Store Locations</a></li><br>
+            <li><a class="footer-link" href="/terms-of-service">Terms of Service</a></li><br>
+            <li><a class="footer-link" href="/refund-policy">Refund Policy</a></li>
+          </ul>
+        </div>
+  
+      </div>
+      <div class="footer-bottom">
+        <p>Copyright 2023 LUXE</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
